@@ -2,18 +2,27 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 let basket = [];
-const basketSize = 5
+const maxItems = 5
 
 
 function addItem(itemInBasket) {
-    if (basket.length <= basketSize){
+    if (basket.length <= maxItems){
     basket.push(itemInBasket);
     return true
     }
     return false    
 }
-addItem('eggs');
-console.log(basket);
+console.log('The basket is ' + basket)
+console.log('Added eggs', addItem('eggs'));
+console.log('Added bacon', addItem('bacon'));
+console.log('The basket is now ' + basket)
+
+function listItems(basket){
+        for (let i=0; i<basket.length; i++){
+        console.log('Item in basket is:' + basket[i]);
+    }
+}    
+console.log(listItems(basket));
 
 
 
