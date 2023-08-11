@@ -3,11 +3,12 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 let basket = [];
 
+
 function addItem(itemInBasket) {
     basket.push(itemInBasket);
     return basket
 }
-addItem('kale');
+addItem('eggs');
 console.log(basket);
 
 
