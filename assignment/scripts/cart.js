@@ -2,11 +2,15 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 let basket = [];
+const basketSize = 5
 
 
 function addItem(itemInBasket) {
+    if (basket.length <= basketSize){
     basket.push(itemInBasket);
-    return basket
+    return true
+    }
+    return false    
 }
 addItem('eggs');
 console.log(basket);
