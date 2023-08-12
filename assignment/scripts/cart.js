@@ -27,7 +27,7 @@ console.log(listItems(basket));
 function empty(basket){
     if (basket.length > 0){
         basket.length=0
-        console.log('The basket is now empty')
+        return console.log('The basket is now empty')
     }
 }
 console.log(empty(basket))
